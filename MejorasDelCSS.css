@@ -1,0 +1,76 @@
+body {
+    background-color: #f0f7f9; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333; 
+    margin: 20px;
+}
+
+h1, h2, h3 {
+    color: #5d9b9b; 
+}
+
+.post-summary-card, 
+.usuario-card {
+    padding: 20px; 
+    border-radius: 12px;
+    background: #ffffff; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post-summary-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.posts-list-grid, 
+.usuarios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    gap: 30px; 
+    margin-top: 30px;
+}
+
+select {
+    padding: 10px 15px; 
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #c8d9e2; 
+    background-color: #eaf4f7; 
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.info-usuario-post {
+    margin-top: 40px;
+    padding: 25px;
+    background: #eaf5e1; 
+    border-radius: 12px;
+    border-left: 5px solid #a8dadc; 
+}
+
+.info-usuario-post h2, 
+.info-usuario-post h3 {
+    color: #457b9d; 
+    border-bottom: 1px solid #d4e7d7;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.read-more-link,
+.posts-page-container a,
+.detalle-post-container a {
+    color: #f18c8e; 
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.read-more-link:hover,
+.posts-page-container a:hover,
+.detalle-post-container a:hover {
+    color: #e07476; 
+    text-decoration: underline;
+}
